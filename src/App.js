@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("/hello").then((response) => {
+    fetch(".netlify/functions/hello").then((response) => {
       response.text().then((text) => {
         this.setState({message: text})
       });
