@@ -2,12 +2,15 @@
   "name": "war",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:9000",
   "dependencies": {
+    "netlify-lambda": "^0.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "netserve": "netlify-lambda serve ./",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
