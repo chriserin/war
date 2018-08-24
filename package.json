@@ -10,7 +10,8 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
-    "netserve": "netlify-lambda serve ./",
+    "netserve": "netlify-lambda serve ./funcsrc",
+    "netbuild": "netlify-lambda build ./funcsrc",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
